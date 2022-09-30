@@ -7,7 +7,7 @@ class Polynomial:
 			self.p = []
 
 	def degree(self):
-		return len(self.p)
+		return len(self.p) - 1
 
 	def read_poly(self):
 		size = int(input('다항식의 최고 차수를 입력하시오:\t')) + 1
@@ -39,13 +39,14 @@ class Polynomial:
 	def display(self, s):
 		to_print = []
 		for i in range(len(self.p) - 1, -1, -1):
-			to_print.append("(" + str(self.p[i]) + 'x^' + str(i) + ")")
+			to_print.append("(" + str(self.p[i]) + ")" + 'x^' + str(i))
 		print(s + '+'.join(to_print))
 
 
 p = Polynomial()
 p.read_poly()
 p.display("A(x) =\t")
+print(f"A(x)의 차수는 {p.degree()}이다.")
 q = Polynomial()
 q.read_poly()
 q.display("B(x) =\t")
