@@ -37,7 +37,7 @@ sw 전 과정에 대한 체계적인 접근 방법
 
 # swe가 해결하려는 문제가 뭐야?
 
-* scale - 어떻게 하면 큰  sw를 만들 수 있을까
+* scale - 어떻게 하면 큰  sw를 만들 수 있을까. 엥간이 엎어져야지..
 * quality and productivity
 * consistency and reproducibility
 * changes
@@ -50,7 +50,7 @@ sw 전 과정에 대한 체계적인 접근 방법
 
 # sw 품질 기준을 뭐라고 불러?
 
-SQuaRE (software product quality requirements and evaluation)
+S Qua R E (software product quality requirements and evaluation)
 
 # SQuaRE의 기준으로 뭐가 있어?
 
@@ -272,14 +272,6 @@ request for proposal - 제안 요청서
 * SOW (statement of work) - 작업 명세서
 * 시스템 구성도
 
-# 프로젝트 스케쥴링은?
-
-# 팀 구성은?
-
-# 리스크 관리는 어떻게 해야 할까?
-
-
-
 # 개발비용 및 시간을 추정하는 방법을 설명해봐라
 
 * 경험 기반
@@ -291,7 +283,7 @@ Efforts = [sw type 상수] X [KLOC 나 FP  - size임] ^ [1~1.5 사이의 복잡�
 
 단위는 PM
 
-# 사이즈 기반인 cocomo1 단점
+# 사이즈 기반인 cocomo1 단점 (이상)
 
 * 우리 뭘 만들지 정하지도 않았는데 규모를 어케 아노..
 * 사심 채움
@@ -350,7 +342,7 @@ DevOps
 
 # 프로젝트 계획에 포함되어야할 항목을 모두 선택하시오.
 
-Statement of work✔
+Statement of work✔ - sow 작업 명세서
 
 Project team organization✔
 
@@ -390,7 +382,7 @@ Software vendor independent model✔
 
 의존성
 
-# CPM에서 프로젝트를 완수하기 위해 필요한 최소 작업 기간을 결정하는 경로를 무엇이라 하는가?*
+# CPM에서 프로젝트를 완수하기 위해 필요한 최소 작업 기간을 결정하는 경로를 무엇이라 하는가?
 
 critical path
 
@@ -400,11 +392,11 @@ DevOps
 
 # 위험 관리(Risk management) 중 위험 분석(Risk analysis) 활동과 가장 관련이 깊은    사항을 모두 고르시오.*
 
-위험 사항을 지속적으로 모니터링 - risk analysis
+위험 사항을 지속적으로 모니터링 - risk monitoring
 
 위험 유형 (기술, 조직, 비즈니스 환경 등) 파악 - risk identification
 
-위험 해결 방안 마련 - rist resolution
+위험 해결 방안 마련 - risk resolution
 
 위험으로 인한 피해 효과✔
 
@@ -490,13 +482,7 @@ actor, ,use-case, system scope
 
 맞음.
 
-# 두개 이상 use cases가 공유하는 usecase 관계?
-
-include relationship
-
-# 상위 관계
-
-use case generalization
+![image-20230420171421378](/Users/mtak/hw/소공론/image-20230420171421378.png)
 
 # 줄임말 SRS의 영어 본딧말을 작성하시오.
 
@@ -515,31 +501,23 @@ model
 * object oriented methods
 * structured methods
 
-# 구조적 프로그램(structured programs)을 작성할 때 주요 제어 흐름을 모두 선택하시오.*
 
-break (반복에서 빠져 나오기)
 
-goto (지정한 라벨로 이동)✔
+# 구조적 프로그램(structured programs)을 작성할 때 주요 제어 흐름이 아닌것은?
 
-iteration (반복)✔
+- [ ] break (반복에서 빠져 나오기)
 
-sequence (순차)✔
+- [ ] goto (지정한 라벨로 이동)
 
-selection (조건부 실행)✔
+- [ ] iteration (반복)
 
-#  슬라이드 P.10 하단의 데이터 플로우 다이어그램(data-flow diagram) 예시에서 사용한 제어 흐름을 모두 선택하시오.*
+- [ ] sequence (순차)
 
-break (반복에서 빠져 나오기)
+- [ ] selection (조건부 실행)
 
-goto (지정한 라벨로 이동)
+> goto
 
-iteration (반복)
-
-sequence (순차)✔
-
-selection (조건부 실행)✔
-
-# 슬라이드 P.12 데이터 딕셔너리 예시에서 배열이나 리스트로 구현하기 적절한 요소는 무엇인가?
+# 데이터 딕셔너리 예시에서 배열이나 리스트로 구현하기 적절한 요소는 무엇인가?
 
 Name
 
@@ -591,26 +569,54 @@ Dependence
 
 Realization
 
-#  Slide 25의 클래스 다이어그램 예시에서 Q3의 관계를 이루고 있는 두 개의 클래스 짝을 모두 선택하시오.*
+#  UML 다이어그램 종류에서 나머지 종류들과 성격이 다른 것을 한 가지 선택하시오.
 
-VideoStoreSystem과 Customer✔
+- [ ] Class diagram
 
-Customer와 Adult
+- [ ] Sequence diagram
 
-Adult와 Child
+- [ ] Activity diagram
 
-Rental과 Video✔
+- [ ] State diagram
 
-Inventory와 Video✔
+- [ ] Communication diagram
 
-#  다음 예시 UML 다이어그램 종류에서 나머지 종류들과 성격이 다른 것을 한 가지 선택하시오.*
+> class diagram
+>
+>  class 관계(static) vs 실행 flow(dynamic)
 
-Class diagram✔
+* 분석 단계에선 고갱님의 요구사항 문서를 의미하고, 설계 단계에선 개발자가 구현할 구조 문서를 의미하는 것은?
 
-Sequence diagram
+model
 
-Activity diagram
+* structured methods와 object oriented methods의 차이는 무엇인가?
 
-State diagram
+1. structred는 모델링의 기본 단위가 function이고, oo는 클래스/객체다.
 
-Communication diagram
+* structured의 sa단계에 사용하는 모델링 방법 두가지는?
+
+  DFD, Data dictionary
+
+* object oriented 의 sa단계에서 사용하는 모델링 방법은?
+
+  UML
+
+# data dictionary에서 다음 정보를 타입에 맞게 표기해보라
+
+![image-20230420161821574](/Users/mtak/hw/소공론/image-20230420161821574.png)
+
+>  name + category + class + {no + stock # + quantity + unit price} + [처리됨 | 아직 안됨]
+
+# class diagram relationships
+
+| relations                                       | notation                                     | exp                                                          |
+| ----------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------ |
+| association                                     | 실선                                         | 서로의 기능을 사용한다                                       |
+| inheritance (generalization)                    | 실선 + 속이 빈 화살표 (영혼까지 줄 순 없다.) | 상속                                                         |
+| aggregation (집합 - 특별한 association)         | 실선 + 속이 빈 다이아                        | 한 객체가 다른 객체를 포함하는 것을 나타낸다.<br /> 부분 객체를 다른 객체와 공유할 수 있다. <br />전체 객체의 라이프타임과 부분 객체의 라이프타임은 독립적이다. |
+| compositon(집합 - 특별한 association) 너 못보내 | 실선 + 속이 찬 다이아(생명)                  | 부분 객체가 전체 객체에 속하는 관계다. <br />전체 객체가 사라지면 부분 객체도 사라진다. <br />부분 객체를 다른 객체와 공유할 수 없다. |
+| dependency                                      | 점선                                         | 아 DTO 용으로만 썼다고요!!                                   |
+| realization                                     | 점선 + 빈 삼각형                             | 인터페이스<---와 구현체 의 관계                              |
+
+
+
